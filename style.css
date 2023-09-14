@@ -608,38 +608,6 @@ button:focus {
     margin-bottom: 40px;
 }
 
-
-
-@media only screen and (max-width: 576px) {
-    
-    .timeline-box {
-        width: 100%;
-        left: 10% !important;
-    }
-
-    .bars {
-        display: block;
-    }
-    
-    
-    .nav-menu {
-        display: none;
-    } 
-
-    #portfolio-container {
-        padding: 0 20px;
-    }
-
-    .portfolio-image-container {
-        max-width: 250px;
-        margin: 10px;
-    }
-
-    .portfolio-details {
-        font-size: 0.7rem;
-    }
-}
-
 @media screen and (max-width:1080px) {
     #name-social-container {
         margin-top: 12vh;
@@ -681,7 +649,7 @@ button:focus {
     }
 
     #body-header {
-        height: 50vh;
+        height: 55vh;
     }
     
     #my-name {
@@ -702,4 +670,39 @@ button:focus {
         height: 85%;
     }
 
+}
+
+
+@media only screen and (max-width: 576px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    #body-header {
+        height: 43vh;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+
+    #portfolio-container {
+        padding: 0 20px;
+    }
+
+    .portfolio-image-container {
+        max-width: 250px;
+        margin: 10px;
+    }
+
+    .portfolio-details {
+        font-size: 0.7rem;
+    }
 }
