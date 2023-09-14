@@ -647,10 +647,6 @@ button:focus {
         width: 80%;
         margin: 10%;
     }
-
-    #body-header {
-        height: 55vh;
-    }
     
     #my-name {
         font-size: 2rem;
@@ -658,7 +654,7 @@ button:focus {
     }
 
     #name-social-container {
-        margin-top: 4vh;
+        margin-top: 7vh;
     }
 
     .social-icons li a i {
