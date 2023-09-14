@@ -665,6 +665,10 @@ button:focus {
         padding: 8px;
     }
 
+/*     #my-image {
+    margin-top: -17vh;
+} */
+
     #my-image img {
         width: 85%;
         height: 85%;
@@ -685,9 +689,12 @@ button:focus {
     }
 
     #body-header {
-        height: 43vh;
+        height: 40vh;
     }
-    
+
+    #my-image {
+    margin-top: -12vh;
+}
     
     .nav-menu {
         display: none;
