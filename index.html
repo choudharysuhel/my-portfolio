@@ -275,6 +275,13 @@
             </div>
         </section>
 
+        <div class="popup" id="popup">
+            <img src="images\Home-img\popup.png" alt="Pop Img">
+            <h2>Thank You!</h2>
+            <p>CV has been successfully downloaded. Thanks!</p>
+            <button type="submit" class="btn-1" onclick="closepopup()">OK</button>
+        </div>
+
         <section id="contact">
             <h1 class="section-heading mb50px">
                 <span>
@@ -290,7 +297,10 @@
                         <input id="input-email" name="input-email" type="text" required placeholder="Your Email">
                         <textarea id="input-message" name="input-message" rows="2" cols=40
                             placeholder="Message"></textarea>
-                        <button class="sub-btn" type="submit" onclick={handleSubmitForm}>SEND MESSAGE</button>
+<!--                         <button class="sub-btn" type="submit" >SEND MESSAGE</button> -->
+                         <button class="sub-btn" type="submit" onclick="openpopup() >
+                             <a href="images\SUHEL_CV.docx" target="_blank">SEND MESSAGE</a>
+                         </button>
                     </form>
                 </div>
                 <div id="my-details-container">
@@ -338,10 +348,6 @@
                 </ul>
         </section>
     </main>
-    <script src="index.js">
-        function handleSubmitForm(e) {
-            e.preventDefault();
-        }
     </script>
 </body>
 
