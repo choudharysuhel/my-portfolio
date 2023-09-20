@@ -90,12 +90,36 @@ function checkScroll(){
     }
 }
 
-// popup javascript 
-let popup = document.getElementById("popup");
 
-function openpopup(){
-    popup.classList.add("open-popup");
+// Function to open the popup
+function openPopup() {
+    if (validateForm()) {
+        // Show the popup
+        document.getElementById("popup").style.display = "block";
+        nameField.value = "";
+        emailField.value = "";
+        messageField.value = "";
+    }
 }
-function closepopup(){
-    popup.classList.remove("open-popup");
+
+// Function to close the popup
+function closePopup() {
+    const popup = document.getElementById("popup");
+    popup.style.display = "none";
+}
+
+var nameField = document.getElementById("input-name");
+var emailField = document.getElementById("input-email");
+var messageField = document.getElementById("input-message");
+
+function validateForm() {
+    // Get references to the required fields
+
+    // Check if all required fields are filled
+    if (nameField.value === "" || emailField.value === "" || messageField.value === "") {
+        alert("Please fill in all required fields.");
+        return false;
+    }
+
+    return true;
 }
