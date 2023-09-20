@@ -90,7 +90,6 @@ function checkScroll(){
     }
 }
 
-
 // Function to open the popup
 function openPopup() {
     if (validateForm()) {
